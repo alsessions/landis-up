@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta charset="utf-8" />
+		<title>Landis Arboretum | News</title>
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+		<meta name="referrer" content="origin-when-cross-origin" />
+		<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+			defer></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Rosarivo&display=swap"
+			rel="stylesheet">
+		<link rel="stylesheet" href="/css/styles.css">
+	</head>
+
+	<body class="ltr">
+		{% include '_partials/_header.twig' %}
+		{% paginate craft.entries.section('news').limit(12) as pageInfo, pageEntries %}
+		{# Fetch the entries #}
+		<section class="max-w-7xl px-4 mx-auto mt-10 mb-20 min-h-screen">
+			<h1 class="mb-12">News from Landis</h1>
+			<div class="grid grid-cols-1 md:grid-cols-2 md:gap-4">
+				{% for entry in pageEntries %}
+				<div class="flex flex-wrap md:mb-8 bg-white rounded-lg shadow-sm hover:shadow transition-shadow duration-300">
+					<div class="w-3/12 flex flex-col items-center pt-4">
+						{% for myAsset in entry.featuredImage.all() %}
+						<a href="{{ entry.url }}">
+							<img src="{{ myAsset.url('square500') }}" class="w-32 mx-auto bg-gray-100 rounded-lg shadow-sm md:w-52 hover:opacity-90 transition-opacity duration-300">
+						</a>
+						{% endfor %}
+					</div>
+					<div class="w-9/12 pl-4 md:pl-6 py-4">
+						<p class="text-sm text-gray-600 mb-2">
+							{{ entry.postDate | date("M j, Y") }}
+						</p>
+						<h4 class="text-lg font-medium leading-tight md:text-xl mb-3">
+							<a href="{{ entry.url }}" class="text-blue-500 hover:text-blue-800 transition-colors duration-300 inline-block">{{ entry.title }}</a>
+						</h4>
+						{{ entry.textMarkdown | chop(limit=15, unit='w',append="...")  | retconAttr('p', { class: 'text-sm text-gray-600 mb-4' }) }}
+						<a href="{{ entry.url }}" class="block mt-3 px-3 py-1 bg-green-600 text-white text-sm rounded-md shadow-sm hover:bg-green-700 transition-colors duration-300 w-fit">Read More</a>
+						{# PurgeCSS: bg-green-600 text-base md:text-lg mx-auto max-w-3xl py-4 px-6 rounded-2xl my-10 text-white px-8 #}
+					</div>
+				</div>
+				{% endfor %}
+			</div>
+			<div class="flex justify-between max-w-7xl mx-auto my-8">
+				<div>{% if pageInfo.prevUrl %}<a href="{{ pageInfo.prevUrl }}" class="inline-flex items-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md shadow-sm hover:bg-green-700 transition-colors duration-300">&larr; Previous Page</a>{% endif %}</div>
+				<div>{% if pageInfo.nextUrl %}<a href="{{ pageInfo.nextUrl }}" class="inline-flex items-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md shadow-sm hover:bg-green-700 transition-colors duration-300">Next Page &rarr;</a>{% endif %}</div>
+			</div>
+		</section>
+		{# PurgeCSS: text-base lg:text-lg #}
+		{% include '_partials/_footer' %}
+	</body>
+
+</html>

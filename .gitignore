@@ -1,0 +1,64 @@
+# CRAFT ENVIRONMENT
+/.env
+.env
+/.env.sh
+/.env.php
+/.env.local
+/.env.production
+/.env.save
+/.ddev/.env.web
+/config/license.key
+/.ddev/traefik/certs/
+
+
+
+
+# COMPOSER
+/vendor
+/composer.phar
+
+# CRAFT STORAGE
+/storage/*
+!/storage/.gitkeep
+!/storage/rebrand/
+
+# ASSETS
+/web/assets/*
+!/web/assets/.gitkeep
+/web/cpresources/*
+/web/uploads/*
+
+# DATABASE BACKUPS
+*.sql
+*.sql.gz
+*.sql.zip
+*.sql.tar
+*.sql.7z
+*.db
+*.sqlite
+dbdump*
+
+# BUILD FILES
+/node_modules
+/bower_components
+/build
+/yarn-error.log
+/npm-debug.log
+
+# DEVELOPMENT
+/AGENTS.md
+/OLDcomposer.json
+/composer.json.save
+/tailwind.config.js.bak
+/landis-contstant-contact.json
+/.idea
+/.vscode
+/.vagrant
+/.cache
+/.zed
+
+# SYSTEM FILES
+.DS_Store
+Thumbs.db
+.php_cs.cache
+__MACOSX

@@ -1,0 +1,40 @@
+{% include '_partials/_head.twig' %}
+
+<body class="ltr">
+	{% include '_partials/_header.twig' %}
+	<main class="grid gap-4 px-4 py-10 mx-auto mb-40 max-w-7xl md:grid-cols-5">
+		<div class="md:col-span-2">
+			<h2 class="mt-0">{{ entry.title }}</h2>
+			<p class="text-lg italic leading-tight">In order to help stop the
+				spread of the COVID-19 virus, many things have been cancelled at the Arboretum. If
+				you enjoy this performance and can afford to, please consider <a href="/donate"
+					class="text-blue-500 hover:underline">donating</a> or <a href="/membership"
+					class="text-blue-500 hover:underline">joining</a> Landis &mdash; any donation is
+				sincerely appreciated and tax-deductable!
+			{{ entry.textMarkdown }}
+			</p>
+		</div>
+		<div class=" md:col-span-3">
+
+
+
+			<div class="aspect-w-16 aspect-h-9">
+				{{ entry.embedCode | raw }}
+			</div>
+
+		</div>
+
+
+	</main>
+	{% set params = craft.entries.section('video').orderBy('postDate asc') %}
+	{% set prevEntry = entry.getPrev(params) %} {% set nextEntry = entry.getNext(params) %}
+	<div class="flex justify-between px-4 mx-auto mb-10 md:mb-24 max-w-7xl"> {% if prevEntry %}<a href="{{ prevEntry.url }}"
+			class="inline-flex items-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md shadow-sm hover:bg-green-700 transition-colors duration-300"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.707 5.293a1 1 0 010 1.414L9.414 10l3.293 3.293a1 1 0 01-1.414 1.414l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 0z" clip-rule="evenodd" /></svg>Previous</a>{% endif %}
+			<a href="/video"
+			class="inline-flex items-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md shadow-sm hover:bg-green-700 transition-colors duration-300">All Video</a>
+		{% if nextEntry %}<a href="{{ nextEntry.url }}"
+			class="inline-flex items-center px-4 py-2 bg-green-600 text-white text-sm font-medium rounded-md shadow-sm hover:bg-green-700 transition-colors duration-300">Next<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd" /></svg></a>{% endif %} </div>
+	{% include '_partials/_footer' %}
+</body>
+
+</html>
