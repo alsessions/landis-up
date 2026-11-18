@@ -1,6 +1,4 @@
 columnSuffix: null
-contentColumnType: string
-fieldGroup: c060adfd-ad0d-44ee-9598-933e4f598995 # Common
 handle: featuredImage
 instructions: null
 name: 'Featured Image'
@@ -11,9 +9,9 @@ settings:
   allowUploads: true
   allowedKinds: null
   branchLimit: null
+  defaultPlacement: end
   defaultUploadLocationSource: 'volume:19d84302-acf0-4f82-bb97-a7391fd042ed' # Images
   defaultUploadLocationSubpath: null
-  localizeRelations: false
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
@@ -24,6 +22,7 @@ settings:
   restrictedLocationSource: 'volume:19d84302-acf0-4f82-bb97-a7391fd042ed' # Images
   restrictedLocationSubpath: null
   selectionLabel: null
+  showSearchInput: true
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
@@ -34,6 +33,8 @@ settings:
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list
+tip: null
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\fields\Assets
+warning: null

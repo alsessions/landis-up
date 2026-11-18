@@ -1,16 +1,28 @@
 columnSuffix: null
-contentColumnType: string
-fieldGroup: c060adfd-ad0d-44ee-9598-933e4f598995 # Common
 handle: homeTriptych
 instructions: null
 name: 'Home Triptych'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_hometriptych}}'
-  maxBlocks: null
-  minBlocks: null
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - c39d5013-d880-4e7a-be34-c0d4fc4e08d5 # Home Triptych
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
   propagationKeyFormat: null
   propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+tip: null
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix
+warning: null

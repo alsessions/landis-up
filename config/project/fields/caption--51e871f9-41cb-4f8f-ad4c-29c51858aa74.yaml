@@ -1,6 +1,4 @@
 columnSuffix: nukeduro
-contentColumnType: text
-fieldGroup: c060adfd-ad0d-44ee-9598-933e4f598995 # Common
 handle: caption
 instructions: null
 name: Caption
@@ -9,11 +7,12 @@ settings:
   byteLimit: null
   charLimit: null
   code: false
-  columnType: null
   initialRows: 2
   multiline: true
   placeholder: null
   uiMode: normal
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText
+warning: null

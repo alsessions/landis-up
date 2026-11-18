@@ -1,7 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 3ca5a63a-b996-41a1-b731-ab249d196559 # Default
 handle: newsletter
+maxAuthors: 1
+minAuthors: 1
 name: 'PDF Newsletters [1982-2014]'
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   ccdf06db-63d7-465e-8ec1-7ae2b8a1ad53: # Landis Arboretum

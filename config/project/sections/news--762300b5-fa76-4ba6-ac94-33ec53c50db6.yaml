@@ -1,7 +1,17 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    handle: default
+    uid: 06629c38-9bd8-4454-a5d2-b7b987e88cd3 # Default
 handle: news
+maxAuthors: 1
+minAuthors: 1
 name: 'Newsletter Item'
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   ccdf06db-63d7-465e-8ec1-7ae2b8a1ad53: # Landis Arboretum

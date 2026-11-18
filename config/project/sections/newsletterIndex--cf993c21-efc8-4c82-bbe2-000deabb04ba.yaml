@@ -1,7 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: ec8db3dd-722f-49bf-afad-71df543ff537 # Newsletter Index
 handle: newsletterIndex
+maxAuthors: 1
+minAuthors: 1
 name: 'Newsletter Index'
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   ccdf06db-63d7-465e-8ec1-7ae2b8a1ad53: # Landis Arboretum

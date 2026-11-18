@@ -1,5 +1,8 @@
+altTranslationKeyFormat: null
+altTranslationMethod: site
 fieldLayouts:
   eb5eb7d3-dd14-47f0-b6f7-d529d01baee1:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,6 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -34,10 +38,13 @@ fieldLayouts:
         name: Content
         uid: 48f1e837-5d4a-4048-a23f-076e87d93490
         userCondition: null
+    thumbFieldKey: null
 fs: audio
 handle: audio
 name: Audio
+propagationMethod: custom
 sortOrder: 6
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
 transformFs: null

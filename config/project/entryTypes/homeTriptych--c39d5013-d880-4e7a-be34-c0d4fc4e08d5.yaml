@@ -1,0 +1,63 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  f3393f90-1724-4896-921f-a440a99ca3e0:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:b70bf5d9-0b42-40d4-9e90-2a0d275eb63f'
+      - 'layoutElement:177abd02-4eef-427b-a036-4b9857344691'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 9eaabe94-5978-461f-879d-c030b12da858 # Home Triptych - Home Triptych - Title
+            handle: null
+            instructions: null
+            label: Title
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b70bf5d9-0b42-40d4-9e90-2a0d275eb63f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: eeca32c2-8e52-4400-88eb-983c61727aa9 # Home Triptych - Home Triptych - Text
+            handle: null
+            instructions: null
+            label: Text
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 177abd02-4eef-427b-a036-4b9857344691
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a61b32eb-3300-4131-af79-5803d335a73b
+        userCondition: null
+    thumbFieldKey: null
+handle: homeTriptych
+hasTitleField: false
+icon: null
+name: 'Home Triptych'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

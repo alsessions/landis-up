@@ -1,6 +1,4 @@
 columnSuffix: yicszmgm
-contentColumnType: datetime
-fieldGroup: 0979c525-68a2-44e5-95a2-1a5385cad4fa # Video
 handle: videoDate
 instructions: null
 name: 'Video Date'
@@ -12,6 +10,8 @@ settings:
   showDate: true
   showTime: false
   showTimeZone: false
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Date
+warning: null

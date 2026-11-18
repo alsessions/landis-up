@@ -1,5 +1,9 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
 fieldLayouts:
   27bc7400-cbf1-4d73-8c91-43b4c851616c:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,6 +13,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -21,7 +26,7 @@ fieldLayouts:
             orientation: null
             placeholder: null
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -32,10 +37,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 76ed9077-0f92-4dc0-b3ff-c772483f67ec # Body
+            handle: null
             instructions: null
             label: 'Sidebar Text'
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -46,14 +56,16 @@ fieldLayouts:
         name: Content
         uid: bdbaf72c-1dc8-471e-95ec-1870423b3096
         userCondition: null
+    thumbFieldKey: null
 handle: volunteer
 hasTitleField: false
+icon: null
 name: Volunteer
-section: c5f105ef-0a21-40ef-9337-62d70722c933 # Volunteer
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

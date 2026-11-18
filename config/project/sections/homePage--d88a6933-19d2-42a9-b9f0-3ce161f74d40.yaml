@@ -1,7 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: f8ac5d32-2887-465f-8550-6201cf643f54 # Landis Arboretum (HOME)
 handle: homePage
+maxAuthors: 1
+minAuthors: 1
 name: 'Landis Arboretum (HOME)'
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   ccdf06db-63d7-465e-8ec1-7ae2b8a1ad53: # Landis Arboretum

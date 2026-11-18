@@ -1,6 +1,4 @@
 columnSuffix: ipklaotx
-contentColumnType: datetime
-fieldGroup: 60ef0d6d-98db-4d15-b7e7-a7334cbf9d9a # Events
 handle: date
 instructions: null
 name: Date
@@ -12,6 +10,8 @@ settings:
   showDate: true
   showTime: true
   showTimeZone: false
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Date
+warning: null

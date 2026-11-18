@@ -1,5 +1,8 @@
+altTranslationKeyFormat: null
+altTranslationMethod: site
 fieldLayouts:
   bad6de51-9205-4dcd-aac7-f382af96a712:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,6 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -34,10 +38,13 @@ fieldLayouts:
         name: Content
         uid: 0219c000-3ecd-46f1-8c72-75a314deca6e
         userCondition: null
+    thumbFieldKey: null
 fs: newsletters
 handle: newsletters
 name: Newsletters
+propagationMethod: custom
 sortOrder: 4
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
 transformFs: null

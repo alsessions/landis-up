@@ -1,5 +1,9 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
 fieldLayouts:
   14846d10-9765-4bfb-bfb8-c7a166b051b3:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,6 +13,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -21,7 +26,7 @@ fieldLayouts:
             orientation: null
             placeholder: null
             readonly: false
-            requirable: false
+            required: true
             size: null
             step: null
             tip: null
@@ -34,14 +39,16 @@ fieldLayouts:
         name: Content
         uid: 99d109a1-d803-4bd1-877a-e8bb84afb4b3
         userCondition: null
+    thumbFieldKey: null
 handle: newsIndex
 hasTitleField: false
+icon: null
 name: 'News Index'
-section: cbbedb40-2ecd-4ef9-87bf-1b090965c0b3 # News Index
+showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null
 slugTranslationMethod: site
-sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
+uiLabelFormat: '{title}'

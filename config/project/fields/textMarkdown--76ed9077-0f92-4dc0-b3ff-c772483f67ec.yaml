@@ -1,6 +1,4 @@
 columnSuffix: dgaznprx
-contentColumnType: text
-fieldGroup: c060adfd-ad0d-44ee-9598-933e4f598995 # Common
 handle: textMarkdown
 instructions: null
 name: Body
@@ -16,9 +14,24 @@ settings:
     - 19d84302-acf0-4f82-bb97-a7391fd042ed # Images
     - e143b871-ce17-4247-898b-0476b2325dac # FP Images
   characterLimit: null
-  ckeConfig: a0e368cb-9d8f-427e-bb9a-fe91b8848733 # Less Simple
-  columnType: text
+  css: null
+  cssFile: null
   defaultTransform: 9afd4d0c-09d0-4382-82c4-df2b2ff26cd0 # Article 640
+  defaultUploadLocationSubpath: null
+  defaultUploadLocationVolume: null
+  fullGraphqlData: false
+  headingLevels:
+    - 1
+    - 2
+    - 3
+    - 4
+  imageEntryTypeUid: null
+  imageFieldUid: null
+  imageMode: img
+  js: null
+  jsFile: Less-Simple.json
+  options: null
+  parseEmbeds: false
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
@@ -26,7 +39,21 @@ settings:
   showWordCount: true
   sourceEditingGroups:
     - __ADMINS__
+  toolbar:
+    - heading
+    - '|'
+    - bold
+    - italic
+    - link
+    - '|'
+    - bulletedList
+    - numberedList
+    - '|'
+    - insertImage
+    - sourceEditing
   wordLimit: null
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\ckeditor\Field
+warning: null

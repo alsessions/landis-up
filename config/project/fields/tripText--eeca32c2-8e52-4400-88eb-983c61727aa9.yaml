@@ -1,0 +1,18 @@
+columnSuffix: null
+handle: tripText
+instructions: null
+name: 'Home Triptych - Home Triptych - Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 6
+  multiline: true
+  placeholder: null
+  uiMode: normal
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
+warning: null

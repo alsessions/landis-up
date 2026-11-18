@@ -1,7 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: bb19f09a-fdab-425d-b337-08fb64e513a3 # Video Index
 handle: videoIndex
+maxAuthors: 1
+minAuthors: 1
 name: 'Video Index'
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   ccdf06db-63d7-465e-8ec1-7ae2b8a1ad53: # Landis Arboretum

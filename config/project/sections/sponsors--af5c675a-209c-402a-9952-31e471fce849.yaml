@@ -1,7 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 4c10b646-a697-4ca9-b54a-f3e9974beff6 # Sponsors
 handle: sponsors
+maxAuthors: 1
+minAuthors: 1
 name: Sponsors
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   ccdf06db-63d7-465e-8ec1-7ae2b8a1ad53: # Landis Arboretum

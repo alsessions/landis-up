@@ -1,6 +1,7 @@
 defaultPlacement: end
 fieldLayouts:
   4f908a56-6664-488f-af54-3b7a02a48965:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -10,6 +11,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -33,10 +35,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 9d00a830-216b-4f32-8860-c1eddd638719 # Featured Image
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -45,10 +52,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: c2355853-0b3a-451c-bc58-915c397e7a06 # Volume
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -57,10 +69,15 @@ fieldLayouts:
             warning: null
             width: 25
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: 18b2da16-3aa7-4cfc-abb2-84832d2cf5f5 # Number
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -71,6 +88,7 @@ fieldLayouts:
         name: Content
         uid: 7ebe93c6-167c-4681-bac0-2bc460ffc0f7
         userCondition: null
+    thumbFieldKey: null
 handle: category
 name: Issue
 siteSettings:

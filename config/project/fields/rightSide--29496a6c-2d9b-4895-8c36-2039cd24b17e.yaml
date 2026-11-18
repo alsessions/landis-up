@@ -1,16 +1,55 @@
 columnSuffix: null
-contentColumnType: string
-fieldGroup: c060adfd-ad0d-44ee-9598-933e4f598995 # Common
 handle: rightSide
 instructions: null
 name: 'Right Column'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_rightside}}'
-  maxBlocks: null
-  minBlocks: null
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 7e12476d-61a5-493d-b2f2-364e3b534a9a # Header
+        -
+          - handle
+          - header
+    -
+      __assoc__:
+        -
+          - uid
+          - 3a1670b2-e503-440b-a0e1-5be644ce11e1 # Text
+        -
+          - handle
+          - text
+    -
+      __assoc__:
+        -
+          - uid
+          - 7469dd6b-45d6-4034-9c59-9351553737c8 # Image
+        -
+          - handle
+          - image
+    -
+      __assoc__:
+        -
+          - uid
+          - 6e2eab7f-e833-4f1e-aeb9-df90935bd557 # CTA Button
+        -
+          - handle
+          - ctaButton
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
   propagationKeyFormat: null
   propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+tip: null
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix
+warning: null

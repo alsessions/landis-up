@@ -1,7 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: f9f88998-20d8-4ede-ab79-545fa8f900fb # Upcoming Events
 handle: eventsIndex
+maxAuthors: 1
+minAuthors: 1
 name: 'Upcoming Events'
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   ccdf06db-63d7-465e-8ec1-7ae2b8a1ad53: # Landis Arboretum

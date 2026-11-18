@@ -1,5 +1,8 @@
+altTranslationKeyFormat: null
+altTranslationMethod: site
 fieldLayouts:
   5d02eaa2-c2bb-4480-a527-2ad33bac96d9:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,6 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -34,10 +38,13 @@ fieldLayouts:
         name: Content
         uid: bc192f76-355b-4621-8e2e-c0ee80b1ad33
         userCondition: null
+    thumbFieldKey: null
 fs: sponsors
 handle: sponsors
 name: Sponsors
+propagationMethod: custom
 sortOrder: 5
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
 transformFs: null

@@ -1,0 +1,17 @@
+columnSuffix: hpgwohjj
+handle: timer2
+instructions: null
+name: 'Front Page Hero - Slide Image - Timer'
+searchable: false
+settings:
+  max: null
+  min: null
+  minuteIncrement: 30
+  showDate: true
+  showTime: true
+  showTimeZone: false
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Date
+warning: null

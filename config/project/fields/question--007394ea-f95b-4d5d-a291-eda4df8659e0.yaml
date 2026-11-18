@@ -1,0 +1,18 @@
+columnSuffix: null
+handle: question
+instructions: null
+name: 'FAQ - Question - Question'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 2
+  multiline: true
+  placeholder: null
+  uiMode: normal
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
+warning: null

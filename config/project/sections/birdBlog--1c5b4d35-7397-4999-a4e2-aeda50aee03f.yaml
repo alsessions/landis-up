@@ -1,7 +1,17 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    handle: default
+    uid: 95fbc062-8ec3-4bce-b7e3-d7d24072f4d6 # Default
 handle: birdBlog
+maxAuthors: 1
+minAuthors: 1
 name: 'Bird Blog'
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   ccdf06db-63d7-465e-8ec1-7ae2b8a1ad53: # Landis Arboretum

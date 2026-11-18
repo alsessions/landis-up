@@ -1,16 +1,28 @@
 columnSuffix: null
-contentColumnType: string
-fieldGroup: c060adfd-ad0d-44ee-9598-933e4f598995 # Common
 handle: faq
 instructions: 'Frequently asked querstions.'
 name: FAQ
 searchable: true
 settings:
-  contentTable: '{{%matrixcontent_faq}}'
-  maxBlocks: null
-  minBlocks: null
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 40356b56-7226-42f2-9e8a-980fb5062e86 # Question
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
   propagationKeyFormat: null
   propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+tip: null
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix
+warning: null

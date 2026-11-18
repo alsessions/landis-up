@@ -1,16 +1,38 @@
 columnSuffix: null
-contentColumnType: string
-fieldGroup: c060adfd-ad0d-44ee-9598-933e4f598995 # Common
 handle: pageBuilder
 instructions: null
 name: 'Page Builder'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_pagebuilder}}'
-  maxBlocks: null
-  minBlocks: null
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - 31172786-ddd2-45a8-8f50-dceb8550a656 # Two Columns
+    -
+      __assoc__:
+        -
+          - uid
+          - 818868ff-8958-4554-ae24-e5ce8daa6451 # Full Width CTA
+    -
+      __assoc__:
+        -
+          - uid
+          - 3c72b2cb-3e5f-45c7-8040-02ba9d46a8f1 # Text
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
   propagationKeyFormat: null
   propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+tip: null
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix
+warning: null

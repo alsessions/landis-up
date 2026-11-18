@@ -1,7 +1,17 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    handle: default
+    uid: b9caa3e5-5a2f-483e-ad1f-36f35c3f74ed # Default
 handle: nativePlantsTour
+maxAuthors: 1
+minAuthors: 1
 name: 'Native Plants Tour'
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   ccdf06db-63d7-465e-8ec1-7ae2b8a1ad53: # Landis Arboretum

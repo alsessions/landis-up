@@ -1,7 +1,17 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    handle: default
+    uid: fb7a658c-3e62-4f91-b7bd-b3d43ce36326 # Default
 handle: audio
+maxAuthors: 1
+minAuthors: 1
 name: Audio
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   ccdf06db-63d7-465e-8ec1-7ae2b8a1ad53: # Landis Arboretum

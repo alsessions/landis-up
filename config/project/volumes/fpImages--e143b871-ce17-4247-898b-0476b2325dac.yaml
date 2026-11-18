@@ -1,5 +1,8 @@
+altTranslationKeyFormat: null
+altTranslationMethod: site
 fieldLayouts:
   8b5849a8-b7ad-49a5-9804-c873ef8bec62:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -9,6 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -32,10 +36,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: null
+            editCondition: null
             elementCondition: null
+            elementEditCondition: null
             fieldUid: fb4c1616-9377-4fbb-8863-b8e1f86c1c32 # FP Images
+            handle: null
             instructions: null
             label: null
+            oldFieldUid: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
@@ -46,10 +55,13 @@ fieldLayouts:
         name: Content
         uid: eb380e63-02cd-4f96-913e-93ffda20d8ae
         userCondition: null
+    thumbFieldKey: null
 fs: fpImages
 handle: fpImages
 name: 'FP Images'
+propagationMethod: custom
 sortOrder: 3
+subpath: ''
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
 transformFs: null

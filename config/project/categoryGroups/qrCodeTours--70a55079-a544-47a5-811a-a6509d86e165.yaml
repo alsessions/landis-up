@@ -1,6 +1,7 @@
 defaultPlacement: end
 fieldLayouts:
   e314d05b-da6b-46bf-89b4-cb465ca6353a:
+    cardThumbAlignment: end
     tabs:
       -
         elementCondition: null
@@ -10,6 +11,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
+            dateAdded: null
             disabled: false
             elementCondition: null
             id: null
@@ -35,6 +37,7 @@ fieldLayouts:
         name: Content
         uid: 410e3482-da36-4323-ba97-fc5f0c76dc46
         userCondition: null
+    thumbFieldKey: null
 handle: qrCodeTours
 name: 'QR Code Tours'
 siteSettings:

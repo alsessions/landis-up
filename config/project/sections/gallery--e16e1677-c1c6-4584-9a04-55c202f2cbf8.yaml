@@ -1,7 +1,17 @@
 defaultPlacement: beginning
 enableVersioning: true
+entryTypes:
+  -
+    handle: default
+    uid: e3dcc06f-87f9-432c-bbcb-301d3c05a1af # Default
 handle: gallery
+maxAuthors: 1
+minAuthors: 1
 name: Gallery
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   ccdf06db-63d7-465e-8ec1-7ae2b8a1ad53: # Landis Arboretum

@@ -1,6 +1,4 @@
 columnSuffix: null
-contentColumnType: string
-fieldGroup: c060adfd-ad0d-44ee-9598-933e4f598995 # Common
 handle: pageImages
 instructions: null
 name: 'Page Images'
@@ -11,9 +9,9 @@ settings:
   allowUploads: true
   allowedKinds: null
   branchLimit: null
+  defaultPlacement: end
   defaultUploadLocationSource: 'volume:e143b871-ce17-4247-898b-0476b2325dac' # FP Images
   defaultUploadLocationSubpath: null
-  localizeRelations: false
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
@@ -24,6 +22,7 @@ settings:
   restrictedLocationSource: 'volume:e143b871-ce17-4247-898b-0476b2325dac' # FP Images
   restrictedLocationSubpath: null
   selectionLabel: null
+  showSearchInput: true
   showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
@@ -33,6 +32,8 @@ settings:
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list
+tip: null
 translationKeyFormat: null
-translationMethod: site
+translationMethod: none
 type: craft\fields\Assets
+warning: null

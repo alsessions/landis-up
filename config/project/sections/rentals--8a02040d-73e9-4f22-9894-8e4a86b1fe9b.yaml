@@ -1,7 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 7eb9288d-a2b2-43f4-9081-c2c32b6e8a39 # Rentals
 handle: rentals
+maxAuthors: 1
+minAuthors: 1
 name: Rentals
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   ccdf06db-63d7-465e-8ec1-7ae2b8a1ad53: # Landis Arboretum

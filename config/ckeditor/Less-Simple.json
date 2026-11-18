@@ -1,0 +1,12 @@
+{
+  "image": {
+    "toolbar": [
+      "transformImage",
+      "imageStyle:alignLeft",
+      "imageStyle:alignCenter",
+      "imageStyle:alignRight",
+      "toggleImageCaption",
+      "imageTextAlternative"
+    ]
+  }
+}

@@ -1,16 +1,28 @@
 columnSuffix: null
-contentColumnType: string
-fieldGroup: 7a7bebc2-1aca-4545-a5a5-4b49382db799 # Front Page Hero
 handle: frontPageHero
 instructions: 'The front page hero.'
 name: 'Front Page Hero'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_frontpagehero}}'
-  maxBlocks: null
-  minBlocks: null
+  createButtonLabel: null
+  defaultIndexViewMode: cards
+  enableVersioning: false
+  entryTypes:
+    -
+      __assoc__:
+        -
+          - uid
+          - ef7e8ec6-9528-478f-9d96-cacc3be7a39d # Slide Image
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
   propagationKeyFormat: null
   propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+tip: null
 translationKeyFormat: null
 translationMethod: site
 type: craft\fields\Matrix
+warning: null

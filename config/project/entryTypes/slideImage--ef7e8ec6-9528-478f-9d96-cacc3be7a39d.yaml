@@ -1,0 +1,134 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  f758f757-4fd9-412b-a289-e804a2320724:
+    cardThumbAlignment: end
+    cardView:
+      - 'layoutElement:3a5472b2-23fc-4507-b3b2-3c93f80c27cd'
+      - 'layoutElement:f136e70f-6327-4794-942f-12f6944808bc'
+      - 'layoutElement:eb736ef1-26b2-4372-bee1-ea824b99d16e'
+      - 'layoutElement:3d78010d-6945-4f00-86cf-170d48485d15'
+      - 'layoutElement:4835d96f-2603-42d0-89c8-009c604e2621'
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 080a8953-e1e2-46e6-8872-b248d20a5273 # Front Page Hero - Slide Image - Slide Image
+            handle: null
+            instructions: null
+            label: 'Slide Image'
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9b7e3ede-3e54-4e98-b2f9-ef07b64d47c4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: e8f2f648-3c3d-4ad4-a522-d8f4d8569369 # Front Page Hero - Slide Image - Slide Title
+            handle: null
+            instructions: null
+            label: 'Slide Title'
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3a5472b2-23fc-4507-b3b2-3c93f80c27cd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 2cc319de-e826-4dd2-8d36-d9a76b76c8e7 # Front Page Hero - Slide Image - Slide Body
+            handle: null
+            instructions: null
+            label: 'Slide Body'
+            oldFieldUid: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f136e70f-6327-4794-942f-12f6944808bc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 70c5c096-4ae4-48cf-ba86-ddf5ddb57606 # Front Page Hero - Slide Image - CTA Link
+            handle: ctaLink
+            instructions: null
+            label: 'CTA Link'
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eb736ef1-26b2-4372-bee1-ea824b99d16e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 81f4f832-7c04-42af-9192-dc125d097512 # Front Page Hero - Slide Image - CTA Button Text
+            handle: null
+            instructions: null
+            label: 'CTA Button Text'
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3d78010d-6945-4f00-86cf-170d48485d15
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: null
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 1f417d95-1bb6-4dcf-be82-51d9c8e69684 # Front Page Hero - Slide Image - Timer
+            handle: timer
+            instructions: null
+            label: Timer
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4835d96f-2603-42d0-89c8-009c604e2621
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: fc67f744-f813-47ba-a895-94345f7e6694
+        userCondition: null
+    thumbFieldKey: 'layoutElement:9b7e3ede-3e54-4e98-b2f9-ef07b64d47c4'
+handle: slideImage
+hasTitleField: false
+icon: null
+name: 'Slide Image'
+showSlugField: false
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

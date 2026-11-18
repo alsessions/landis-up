@@ -1,6 +1,4 @@
 columnSuffix: uhectmqq
-contentColumnType: text
-fieldGroup: 41c1d536-7cc0-4837-814d-a237f85db1f9 # Newsletters
 handle: number
 instructions: null
 name: Number
@@ -9,11 +7,12 @@ settings:
   byteLimit: null
   charLimit: null
   code: true
-  columnType: null
   initialRows: 4
   multiline: false
   placeholder: null
   uiMode: normal
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\PlainText
+warning: null

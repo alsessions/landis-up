@@ -1,0 +1,18 @@
+columnSuffix: rqbmnkna
+handle: ctaButtonText
+instructions: 'Text for the above call to action link.'
+name: 'Front Page Hero - Slide Image - CTA Button Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+tip: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
+warning: null

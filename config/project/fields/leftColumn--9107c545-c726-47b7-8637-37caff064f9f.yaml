@@ -1,6 +1,4 @@
 columnSuffix: ehhlmgki
-contentColumnType: text
-fieldGroup: c060adfd-ad0d-44ee-9598-933e4f598995 # Common
 handle: leftColumn
 instructions: null
 name: 'Left Column'
@@ -9,9 +7,24 @@ settings:
   availableTransforms: '*'
   availableVolumes: '*'
   characterLimit: null
-  ckeConfig: a0e368cb-9d8f-427e-bb9a-fe91b8848733 # Less Simple
-  columnType: text
+  css: null
+  cssFile: null
   defaultTransform: null
+  defaultUploadLocationSubpath: null
+  defaultUploadLocationVolume: null
+  fullGraphqlData: false
+  headingLevels:
+    - 1
+    - 2
+    - 3
+    - 4
+  imageEntryTypeUid: null
+  imageFieldUid: null
+  imageMode: img
+  js: null
+  jsFile: Less-Simple.json
+  options: null
+  parseEmbeds: false
   purifierConfig: null
   purifyHtml: true
   showUnpermittedFiles: false
@@ -19,7 +32,21 @@ settings:
   showWordCount: false
   sourceEditingGroups:
     - __ADMINS__
+  toolbar:
+    - heading
+    - '|'
+    - bold
+    - italic
+    - link
+    - '|'
+    - bulletedList
+    - numberedList
+    - '|'
+    - insertImage
+    - sourceEditing
   wordLimit: null
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: craft\ckeditor\Field
+warning: null

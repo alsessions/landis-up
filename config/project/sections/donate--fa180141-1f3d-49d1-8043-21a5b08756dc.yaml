@@ -1,7 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 6dc0ab06-9a5a-4c21-9921-9c98ac48db98 # Donate
 handle: donate
+maxAuthors: 1
+minAuthors: 1
 name: Donate
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   ccdf06db-63d7-465e-8ec1-7ae2b8a1ad53: # Landis Arboretum

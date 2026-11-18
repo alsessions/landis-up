@@ -1,7 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 69b33981-0e8a-46c9-9e26-668d0ea9a5db # Audio Tour
 handle: audioTour
+maxAuthors: 1
+minAuthors: 1
 name: 'Audio Tour'
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   ccdf06db-63d7-465e-8ec1-7ae2b8a1ad53: # Landis Arboretum

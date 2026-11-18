@@ -1,7 +1,16 @@
 defaultPlacement: end
 enableVersioning: true
+entryTypes:
+  -
+    uid: 7ddfd564-9dbb-4f4f-980e-4f8558e686d4 # Membership
 handle: membership
+maxAuthors: 1
+minAuthors: 1
 name: Membership
+previewTargets:
+  -
+    label: 'Primary entry page'
+    urlFormat: '{url}'
 propagationMethod: all
 siteSettings:
   ccdf06db-63d7-465e-8ec1-7ae2b8a1ad53: # Landis Arboretum

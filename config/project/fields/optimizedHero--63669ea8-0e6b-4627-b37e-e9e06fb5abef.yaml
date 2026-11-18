@@ -1,6 +1,4 @@
 columnSuffix: xcmzgfmm
-contentColumnType: text
-fieldGroup: c060adfd-ad0d-44ee-9598-933e4f598995 # Common
 handle: optimizedHero
 instructions: null
 name: 'Optimized Hero'
@@ -58,6 +56,8 @@ settings:
         -
           - format
           - jpg
+tip: null
 translationKeyFormat: null
 translationMethod: none
 type: nystudio107\imageoptimize\fields\OptimizedImages
+warning: null
