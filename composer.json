@@ -9,7 +9,6 @@
         "solspace/craft-freeform": "^5.18.4",
         "topshelfcraft/wordsmith": "^5.1.0",
         "verbb/cp-nav": "^6.0.5",
-        "verbb/expanded-singles": "^3.0.11",
         "vlucas/phpdotenv": "^3.4.0"
     },
     "require-dev": {
@@ -47,3 +46,5 @@
         }
     ]
 }
+
+
