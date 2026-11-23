@@ -60,7 +60,7 @@
 
 {% set image = entry.pdfImage.one %}
 {% if image|length %}
-    <img src="{{ image.url }}" alt="generic PDF download link">
+    <img src="{{ image.getUrl({ width: 640, quality: 82, format: 'webp', upscale: false }) }}" alt="{{ image.alt ?? 'Newsletter cover' }}">
 {% else %}
 <img src="/assets/newsletters/vector-pdf.png">
 {% endif %}

@@ -42,7 +42,10 @@
 							{% endfor %}
 							{% else %}
 							<a href="{{ entry.url }}" class="flex flex-col">
-								<img src="/assets/images/_640x640_crop_center-center_82_line/calendar.jpg.webp" class="w-32 mx-auto bg-gray-100 rounded-lg shadow-sm md:w-52 hover:opacity-90 transition-opacity duration-300">
+								{% set calendarImage = craft.assets.volume('images').filename('calendar.jpg').one() %}
+								{% if calendarImage %}
+									<img src="{{ calendarImage.getUrl({ width: 400, height: 400, mode: 'crop', quality: 82, format: 'webp', upscale: false }) }}" alt="Calendar" class="w-32 mx-auto bg-gray-100 rounded-lg shadow-sm md:w-52 hover:opacity-90 transition-opacity duration-300" loading="lazy" width="400" height="400">
+								{% endif %}
 							</a>
 							{% endif %}
 						</div>

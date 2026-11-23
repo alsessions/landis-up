@@ -51,7 +51,7 @@
                 <div class="grid grid-cols-2 md:grid-cols-2 mt-10 mb-20 px-4 gap-6">
                     {% for image in entry.sponsors.orderBy('title').all() %}
                         <div>
-                            <img src="{{ image.url }}" alt="sponsor business card image">
+                            <img src="{{ image.getUrl({ width: 400, quality: 82, format: 'webp', upscale: false }) }}" alt="{{ image.alt ?? image.title }}" loading="lazy">
                         </div>
                     {% endfor %}
                 </div>
@@ -73,9 +73,12 @@
         <div class="pt-12">
             {% if entry.featuredImage | length %}
                 {% set image = entry.featuredImage.one() %}
-                <img src="{{ image.getUrl({ width: 768, height: 576, mode: 'crop', quality: 82, format: 'webp', upscale: false }) }}" alt="{{ image.alt ?? entry.title }}" class="rounded-lg">
+                <img src="{{ image.getUrl({ width: 640, height: 480, mode: 'crop', quality: 82, format: 'webp', upscale: false }) }}" alt="{{ image.alt ?? entry.title }}" class="rounded-lg" width="640" height="480">
             {% else %}
-                <img src="/assets/images/_640x640_crop_center-center_82_line/calendar.jpg.webp">
+                {% set calendarImage = craft.assets.volume('images').filename('calendar.jpg').one() %}
+                {% if calendarImage %}
+                    <img src="{{ calendarImage.getUrl({ width: 640, height: 480, mode: 'crop', quality: 82, format: 'webp', upscale: false }) }}" alt="Calendar" class="rounded-lg" width="640" height="480">
+                {% endif %}
             {% endif %}
         </div>
     </section>

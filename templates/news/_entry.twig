@@ -1,3 +1,4 @@
+{% set loadLightGallery = true %}
 {% include '_partials/_head.twig' %}
 
 <body class="ltr">
@@ -40,7 +41,7 @@
                     <div id="lightgallery" class="grid clear-both max-w-6xl grid-cols-2 gap-4 py-5 mx-auto md:grid-cols-3">
                         {% for myAsset in entry.pageImages %}
                             <a href="{{ myAsset.url }}" class="block overflow-hidden rounded-lg shadow-lg" data-lg-size="{{ myAsset.width }}-{{ myAsset.height }}" data-src="{{ myAsset.url }}">
-                                <img src="{{ myAsset.url }}" alt="{{ myAsset.title }}" class="object-cover w-full h-full transition-transform duration-300 transform hover:scale-105" />
+                                <img src="{{ myAsset.getUrl({ width: 640, quality: 82, format: 'webp', upscale: false }) }}" alt="{{ myAsset.alt ?? myAsset.title }}" class="object-cover w-full h-full transition-transform duration-300 transform hover:scale-105" loading="lazy" />
                             </a>
                         {% endfor %}
                     </div>

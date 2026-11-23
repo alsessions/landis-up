@@ -19,7 +19,7 @@
 
 {% for myAsset in entry.sponsorImages.orderBy('title').all() %}
 <div>
-	<img src="{{ myAsset.url }}" alt="sponsor business card image">
+	<img src="{{ myAsset.getUrl({ width: 400, quality: 82, format: 'webp', upscale: false }) }}" alt="{{ myAsset.alt ?? myAsset.title }}" loading="lazy">
     </div>
 {% endfor %}
 

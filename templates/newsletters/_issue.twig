@@ -25,9 +25,6 @@
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Rosarivo&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="/css/styles.css">
-        <link type="text/css" rel="stylesheet" href="/js/lightgallery/css/lightgallery.css" />
-        <link type="text/css" rel="stylesheet" href="/js/lightgallery/css/lg-fullscreen.css" />
-        <link type="text/css" rel="stylesheet" href="/js/lightgallery/css/lg-thumbnail.css" />
     </head>
 
     <body class="ltr">
@@ -97,8 +94,15 @@
                 {% endfor %}
                 {% else %}
                 <a href="{{ entry.url }}" class="block overflow-hidden">
-                    <img src="/assets/images/_640x640_crop_center-center_82_line/slider-house-lg_2021-11-29-211102_fkbm.jpg"
-                        class="mx-auto w-full object-cover h-64 bg-black hover:opacity-90 transition-opacity duration-300">
+                    {% set fallbackImage = craft.assets
+                        .volume('images')
+                        .folderPath('Landis-buildings/')
+                        .filename('slider-house-lg_2021-11-29-211102_fkbm.jpg')
+                        .one() %}
+                    {% if fallbackImage %}
+                        <img src="{{ fallbackImage.getUrl({ width: 500, height: 500, mode: 'crop', quality: 82, format: 'webp', upscale: false }) }}"
+                            alt="Landis Arboretum" class="mx-auto w-full object-cover h-64 bg-black hover:opacity-90 transition-opacity duration-300" loading="lazy" width="500" height="500">
+                    {% endif %}
                 </a>
                 {% endif %}
                 <div class="px-2 flex flex-col h-full">
