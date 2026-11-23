@@ -58,7 +58,7 @@ fieldLayouts:
     thumbFieldKey: null
 fs: images
 handle: images
-name: Images
+name: 'Site Media'
 propagationMethod: custom
 sortOrder: 1
 subpath: ''

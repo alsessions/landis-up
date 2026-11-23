@@ -19,5 +19,5 @@
  */
 
 return [
-
+    'assets/fpimages/<path:.+>' => 'my-module/media-redirects/redirect',
 ];

@@ -41,7 +41,7 @@ fieldLayouts:
     thumbFieldKey: null
 fs: sponsors
 handle: sponsors
-name: Sponsors
+name: 'Sponsor Logos'
 propagationMethod: custom
 sortOrder: 5
 subpath: ''

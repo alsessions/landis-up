@@ -10,8 +10,8 @@ settings:
   allowedKinds: null
   branchLimit: null
   defaultPlacement: end
-  defaultUploadLocationSource: 'volume:e143b871-ce17-4247-898b-0476b2325dac' # FP Images
-  defaultUploadLocationSubpath: null
+  defaultUploadLocationSource: 'volume:19d84302-acf0-4f82-bb97-a7391fd042ed' # Site Media
+  defaultUploadLocationSubpath: '{{ section.handle == "page" ? "pages" : (section.handle == "homePage" ? "homepage" : section.handle) }}/{{ slug }}'
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
@@ -19,7 +19,7 @@ settings:
   restrictFiles: false
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: 'volume:e143b871-ce17-4247-898b-0476b2325dac' # FP Images
+  restrictedLocationSource: 'volume:19d84302-acf0-4f82-bb97-a7391fd042ed' # Site Media
   restrictedLocationSubpath: null
   selectionLabel: null
   showSearchInput: true
@@ -27,8 +27,7 @@ settings:
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources:
-    - 'volume:19d84302-acf0-4f82-bb97-a7391fd042ed' # Images
-    - 'volume:e143b871-ce17-4247-898b-0476b2325dac' # FP Images
+    - 'volume:19d84302-acf0-4f82-bb97-a7391fd042ed' # Site Media
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list

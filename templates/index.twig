@@ -295,7 +295,12 @@
 		</div>
 	</section>
 
-	<section class="px-4 py-10 sm:py-20 md:py-32" style="background-image:url('/assets/images/Plants/Flowers/_1920x1569_crop_center-center_82_line/goldenrod.jpg.webp?mtime=1750967773');">
+	{% set newsletterBackground = craft.assets
+		.volume('images')
+		.folderPath('Plants/Flowers/')
+		.filename('goldenrod.jpg')
+		.one() %}
+	<section class="px-4 py-10 sm:py-20 md:py-32 bg-cover bg-center bg-no-repeat"{% if newsletterBackground %} style="background-image:url('{{ newsletterBackground.getUrl({ width: 1920, height: 1569, mode: 'crop', quality: 82, format: 'webp', upscale: false }) }}');"{% endif %}>
 		<div class="px-4 py-2 mx-auto bg-white border-8 border-gray-200 rounded-sm sm:w-2/3 lg:w-1/2 bg-opacity-90">
 			<h2 class="mx-auto mb-2 text-xl font-semibold text-center md:text-3xl">
 				Keep in Touch

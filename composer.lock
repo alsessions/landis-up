@@ -1753,16 +1753,16 @@
         },
         {
             "name": "embed/embed",
-            "version": "v4.6.3",
+            "version": "v4.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-embed/Embed.git",
-                "reference": "6370f77c4ea4e7bce755127a1283ea632e2f7ecb"
+                "reference": "82f62ff26bc1a2f5f2a370aa5fd0f31febbbcf92"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-embed/Embed/zipball/6370f77c4ea4e7bce755127a1283ea632e2f7ecb",
-                "reference": "6370f77c4ea4e7bce755127a1283ea632e2f7ecb",
+                "url": "https://api.github.com/repos/php-embed/Embed/zipball/82f62ff26bc1a2f5f2a370aa5fd0f31febbbcf92",
+                "reference": "82f62ff26bc1a2f5f2a370aa5fd0f31febbbcf92",
                 "shasum": ""
             },
             "require": {
@@ -1841,8 +1841,8 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2026-11-21T00:48:42+00:00",
-            "published-time": "2026-11-21T00:48:46+00:00"
+            "time": "2026-11-23T21:30:01+00:00",
+            "published-time": "2026-11-23T21:32:32+00:00"
         },
         {
             "name": "enshrined/svg-sanitize",
@@ -4383,11 +4383,11 @@
         },
         {
             "name": "nystudio107/craft-seomatic",
-            "version": "5.1.22",
+            "version": "5.1.23",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/cab0fe84ec5317172fd5627999b5b5b5067ab38d",
-                "reference": "cab0fe84ec5317172fd5627999b5b5b5067ab38d",
+                "url": "https://api.github.com/repos/nystudio107/craft-seomatic/zipball/a8db3684a8be6189847cd71a5af7333379f007e5",
+                "reference": "a8db3684a8be6189847cd71a5af7333379f007e5",
                 "shasum": ""
             },
             "require": {
@@ -4440,7 +4440,7 @@
                 "issues": "https://nystudio107.com/plugins/seomatic/support",
                 "source": "https://github.com/nystudio107/craft-seomatic"
             },
-            "time": "2026-07-30T19:56:33+00:00"
+            "time": "2026-11-23T20:26:41+00:00"
         },
         {
             "name": "nystudio107/craft-twig-sandbox",
@@ -11189,16 +11189,16 @@
         },
         {
             "name": "web-auth/webauthn-lib",
-            "version": "5.3.15",
+            "version": "5.3.16",
             "source": {
                 "type": "git",
                 "url": "https://github.com/web-auth/webauthn-lib.git",
-                "reference": "768fb8cf7bebaad8a08b3015e206dda95e3320fa"
+                "reference": "7f38dbcf07cd22ec104fa6eb720df22eb4196b47"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/web-auth/webauthn-lib/zipball/768fb8cf7bebaad8a08b3015e206dda95e3320fa",
-                "reference": "768fb8cf7bebaad8a08b3015e206dda95e3320fa",
+                "url": "https://api.github.com/repos/web-auth/webauthn-lib/zipball/7f38dbcf07cd22ec104fa6eb720df22eb4196b47",
+                "reference": "7f38dbcf07cd22ec104fa6eb720df22eb4196b47",
                 "shasum": ""
             },
             "require": {
@@ -11259,7 +11259,7 @@
                 "webauthn"
             ],
             "support": {
-                "source": "https://github.com/web-auth/webauthn-lib/tree/5.3.15"
+                "source": "https://github.com/web-auth/webauthn-lib/tree/5.3.16"
             },
             "funding": [
                 {
@@ -11271,8 +11271,8 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2026-11-18T16:46:55+00:00",
-            "published-time": "2026-11-19T11:40:19+00:00"
+            "time": "2026-11-23T18:46:47+00:00",
+            "published-time": "2026-11-23T20:56:31+00:00"
         },
         {
             "name": "webmozart/assert",

@@ -41,7 +41,7 @@ fieldLayouts:
     thumbFieldKey: null
 fs: audio
 handle: audio
-name: Audio
+name: 'Audio Files'
 propagationMethod: custom
 sortOrder: 6
 subpath: ''

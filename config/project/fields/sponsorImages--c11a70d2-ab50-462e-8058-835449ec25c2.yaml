@@ -10,7 +10,7 @@ settings:
   allowedKinds: null
   branchLimit: null
   defaultPlacement: end
-  defaultUploadLocationSource: 'volume:19d84302-acf0-4f82-bb97-a7391fd042ed' # Images
+  defaultUploadLocationSource: 'volume:19d84302-acf0-4f82-bb97-a7391fd042ed' # Site Media
   defaultUploadLocationSubpath: null
   maintainHierarchy: false
   maxRelations: null
@@ -19,7 +19,7 @@ settings:
   restrictFiles: false
   restrictLocation: true
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: 'volume:0c7956ad-a435-4d62-b1fe-afc2474a656a' # Sponsors
+  restrictedLocationSource: 'volume:0c7956ad-a435-4d62-b1fe-afc2474a656a' # Sponsor Logos
   restrictedLocationSubpath: null
   selectionLabel: null
   showSearchInput: true

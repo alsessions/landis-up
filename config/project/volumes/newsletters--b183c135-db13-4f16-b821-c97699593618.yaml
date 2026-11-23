@@ -41,7 +41,7 @@ fieldLayouts:
     thumbFieldKey: null
 fs: newsletters
 handle: newsletters
-name: Newsletters
+name: 'Newsletter Files'
 propagationMethod: custom
 sortOrder: 4
 subpath: ''

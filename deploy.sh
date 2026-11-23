@@ -17,6 +17,10 @@ git pull --ff-only origin "$BRANCH"
 echo "Installing Composer dependencies..."
 php8.3 "$(command -v composer)" install --no-interaction --no-progress --no-dev
 
+# Move media before project config removes the source volume.
+echo "Applying pre-project-config content migrations..."
+php8.3 craft migrate/up --track=content --interactive=0
+
 # Apply pending Craft and plugin database migrations, and project config changes.
 echo "Applying database migrations and project config..."
 php8.3 craft up --interactive=0

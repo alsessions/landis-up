@@ -1,4 +1,4 @@
-dateModified: 1795468170
+dateModified: 1795470802
 elementSources:
   Solspace\Freeform\Elements\Submission:
     -
@@ -58,7 +58,7 @@ elementSources:
         - dateCreated
         - desc
       disabled: false
-      key: 'volume:19d84302-acf0-4f82-bb97-a7391fd042ed' # Images
+      key: 'volume:19d84302-acf0-4f82-bb97-a7391fd042ed' # Site Media
       tableAttributes:
         - filename
         - size
@@ -67,16 +67,13 @@ elementSources:
         - usage
       type: native
     -
-      key: 'volume:e143b871-ce17-4247-898b-0476b2325dac' # FP Images
+      key: 'volume:b183c135-db13-4f16-b821-c97699593618' # Newsletter Files
       type: native
     -
-      key: 'volume:b183c135-db13-4f16-b821-c97699593618' # Newsletters
+      key: 'volume:0c7956ad-a435-4d62-b1fe-afc2474a656a' # Sponsor Logos
       type: native
     -
-      key: 'volume:0c7956ad-a435-4d62-b1fe-afc2474a656a' # Sponsors
-      type: native
-    -
-      key: 'volume:76b4aeae-36dc-4a5e-93d7-72cb6c71a3e1' # Audio
+      key: 'volume:76b4aeae-36dc-4a5e-93d7-72cb6c71a3e1' # Audio Files
       type: native
     -
       key: 'folder:992231bd-8d9b-4c04-8206-94e65172364f'
@@ -368,13 +365,6 @@ fs:
       path: '@webroot/assets/audio'
     type: craft\fs\Local
     url: '@web/assets/audio'
-  fpImages:
-    hasUrls: true
-    name: 'FP Images'
-    settings:
-      path: '@webroot/assets/fpimages'
-    type: craft\fs\Local
-    url: '@web/assets/fpimages'
   images:
     hasUrls: true
     name: Images
@@ -401,7 +391,7 @@ meta:
     0a1453f3-9367-4cb7-8883-fa726d1bbda2: Link # Link
     0b2bb70b-2642-4c25-9530-f0e35bc68a02: 'Right Column - Image - Image' # Right Column - Image - Image
     0c47ea1d-c165-41bd-bf47-5adbf47458e2: Heading # Heading
-    0c7956ad-a435-4d62-b1fe-afc2474a656a: Sponsors # Sponsors
+    0c7956ad-a435-4d62-b1fe-afc2474a656a: 'Sponsor Logos' # Sponsor Logos
     0eb73179-957c-4167-af47-81d8e8c339fb: Subtitle # Subtitle
     0ec10247-de60-40f9-a891-f06dc34d99d5: Bookings # Bookings
     0f368f05-6c07-47a0-ba95-53d57584765d: 'Right Column - Text - Text' # Right Column - Text - Text
@@ -460,7 +450,7 @@ meta:
     12d2cbac-c1f0-4a53-a563-a9a158162cba: 'Full Width CTA - Heading - Button Link' # Full Width CTA - Heading - Button Link
     12ed2295-5836-4fca-8152-1279d8770d2f: Support # Support
     18b2da16-3aa7-4cfc-abb2-84832d2cf5f5: Number # Number
-    19d84302-acf0-4f82-bb97-a7391fd042ed: Images # Images
+    19d84302-acf0-4f82-bb97-a7391fd042ed: 'Site Media' # Site Media
     29acab52-57b0-44f7-9773-fc6f24993768: Text # Text
     45b6bf49-7b18-41ba-bb19-f451420a19f3: Collections # Collections
     51e871f9-41cb-4f8f-ad4c-29c51858aa74: Caption # Caption
@@ -470,7 +460,7 @@ meta:
     70a55079-a544-47a5-811a-a6509d86e165: 'QR Code Tours' # QR Code Tours
     70c5c096-4ae4-48cf-ba86-ddf5ddb57606: 'Front Page Hero - Slide Image - CTA Link' # Front Page Hero - Slide Image - CTA Link
     73e6f389-874a-42a1-8d01-a2b6dc9d021e: FAQ # FAQ
-    76b4aeae-36dc-4a5e-93d7-72cb6c71a3e1: Audio # Audio
+    76b4aeae-36dc-4a5e-93d7-72cb6c71a3e1: 'Audio Files' # Audio Files
     76ed9077-0f92-4dc0-b3ff-c772483f67ec: Body # Body
     080a8953-e1e2-46e6-8872-b248d20a5273: 'Front Page Hero - Slide Image - Slide Image' # Front Page Hero - Slide Image - Slide Image
     81f4f832-7c04-42af-9192-dc125d097512: 'Front Page Hero - Slide Image - CTA Button Text' # Front Page Hero - Slide Image - CTA Button Text
@@ -525,7 +515,7 @@ meta:
     b4a96df2-9645-4f49-a6e8-0e4a4b3be858: 'Resource Link' # Resource Link
     b9caa3e5-5a2f-483e-ad1f-36f35c3f74ed: Default # Default
     b83f5b79-6c63-4a8c-98ae-0661d6fe8965: 'Page Builder - Two Columns - Right Column' # Page Builder - Two Columns - Right Column
-    b183c135-db13-4f16-b821-c97699593618: Newsletters # Newsletters
+    b183c135-db13-4f16-b821-c97699593618: 'Newsletter Files' # Newsletter Files
     ba270839-1b30-4d37-a57a-c2571fd86fa5: 'PDF Image' # PDF Image
     bb19f09a-fdab-425d-b337-08fb64e513a3: 'Video Index' # Video Index
     bd97e256-62e2-450a-abc3-41aad0fa0ccb: 'Right Column - CTA Button - Text' # Right Column - CTA Button - Text
@@ -553,7 +543,6 @@ meta:
     e8f2f648-3c3d-4ad4-a522-d8f4d8569369: 'Front Page Hero - Slide Image - Slide Title' # Front Page Hero - Slide Image - Slide Title
     e16e1677-c1c6-4584-9a04-55c202f2cbf8: Gallery # Gallery
     e37d4558-d408-47a3-84e4-06388305158e: 'Page Builder - Full Width CTA - Heading' # Page Builder - Full Width CTA - Heading
-    e143b871-ce17-4247-898b-0476b2325dac: 'FP Images' # FP Images
     ea0f14f7-38cc-4763-a0c5-fbc6c70c1451: Issue # Issue
     ec8db3dd-722f-49bf-afad-71df543ff537: 'Newsletter Index' # Newsletter Index
     eea3ae5c-c585-4a49-9b1f-3e0daa89a438: Columns # Columns

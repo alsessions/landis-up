@@ -10,8 +10,8 @@ settings:
   allowedKinds: null
   branchLimit: null
   defaultPlacement: end
-  defaultUploadLocationSource: 'volume:19d84302-acf0-4f82-bb97-a7391fd042ed' # Images
-  defaultUploadLocationSubpath: null
+  defaultUploadLocationSource: 'volume:19d84302-acf0-4f82-bb97-a7391fd042ed' # Site Media
+  defaultUploadLocationSubpath: featured
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
@@ -19,7 +19,7 @@ settings:
   restrictFiles: false
   restrictLocation: false
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: 'volume:19d84302-acf0-4f82-bb97-a7391fd042ed' # Images
+  restrictedLocationSource: 'volume:19d84302-acf0-4f82-bb97-a7391fd042ed' # Site Media
   restrictedLocationSubpath: null
   selectionLabel: null
   showSearchInput: true
@@ -27,9 +27,7 @@ settings:
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources:
-    - 'volume:19d84302-acf0-4f82-bb97-a7391fd042ed' # Images
-    - 'volume:fc446280-a3b5-47ce-be88-a7b46eec5a9f'
-    - 'volume:e143b871-ce17-4247-898b-0476b2325dac' # FP Images
+    - 'volume:19d84302-acf0-4f82-bb97-a7391fd042ed' # Site Media
   targetSiteId: null
   validateRelatedElements: false
   viewMode: list
