@@ -30,6 +30,7 @@
         },
         "allow-plugins": {
             "craftcms/plugin-installer": true,
+            "php-http/discovery": true,
             "yiisoft/yii2-composer": true
         }
     },
@@ -46,5 +47,3 @@
         }
     ]
 }
-
-
