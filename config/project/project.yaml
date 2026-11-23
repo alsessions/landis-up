@@ -1,4 +1,4 @@
-dateModified: 1795110883
+dateModified: 1795468170
 elementSources:
   Solspace\Freeform\Elements\Submission:
     -
@@ -503,7 +503,6 @@ meta:
     29496a6c-2d9b-4895-8c36-2039cd24b17e: 'Right Column' # Right Column
     40356b56-7226-42f2-9e8a-980fb5062e86: Question # Question
     63087f66-bf86-47c5-bab3-a40e6106e03f: 'Landis Arboretum' # Landis Arboretum
-    63669ea8-0e6b-4627-b37e-e9e06fb5abef: 'Optimized Hero' # Optimized Hero
     93878cb5-0ca9-4979-a0c4-252b4f6cf04d: Video # Video
     248386fe-8099-4726-908b-b085800c794a: 'Site Contact' # Site Contact
     511297b0-ffe8-4eb3-8bf8-1255f1cd2729: 'Article 400 Wide' # Article 400 Wide
@@ -520,7 +519,6 @@ meta:
     a9ca2ff0-0116-44ce-9c8b-7559b0da835b: Transcript # Transcript
     a53b5286-9ea0-4744-a2db-ab7b320496fd: 'No Content' # No Content
     a588c41c-3ec4-4bbb-8d7f-a389ba747a3e: Sponsors # Sponsors
-    a8936e76-9a16-4826-bed0-89f9e810cba9: 'Collection Images' # Collection Images
     a7931313-4e13-4423-ae89-3e60ed563a58: 'Privacy Policy' # Privacy Policy
     af5c675a-209c-402a-9952-31e471fce849: Sponsors # Sponsors
     b09d30a2-6a31-4725-89bf-5a94292a5de3: 'Right Column' # Right Column
@@ -541,7 +539,6 @@ meta:
     ca89dc0b-b0b3-44a2-9afc-d3657df6da5a: 'CTA Button' # CTA Button
     cbb16297-051c-4562-81b3-4310f0cb9da0: 'Right Column - CTA Button - Link' # Right Column - CTA Button - Link
     cbbedb40-2ecd-4ef9-87bf-1b090965c0b3: 'News Index' # News Index
-    cbf66916-b8c6-486e-8a1e-940f98194059: 'Optimized Image' # Optimized Image
     ccdf06db-63d7-465e-8ec1-7ae2b8a1ad53: 'Landis Arboretum' # Landis Arboretum
     cf993c21-efc8-4c82-bbe2-000deabb04ba: 'Newsletter Index' # Newsletter Index
     d00e6366-aa0d-4267-afd1-81d0938bff8d: 'Privacy Policy' # Privacy Policy
@@ -568,7 +565,6 @@ meta:
     f41dee84-6cee-49f5-b914-af0b4ed3dc88: Slider # Slider
     f93cd97c-5df9-4e1b-b703-666abea9ba02: Default # Default
     fa180141-1f3d-49d1-8043-21a5b08756dc: Donate # Donate
-    fb4c1616-9377-4fbb-8863-b8e1f86c1c32: 'FP Images' # FP Images
     fb7a658c-3e62-4f91-b7bd-b3d43ce36326: Default # Default
     fb54f643-0fca-4cd4-af27-ab9bc32c5997: 'Site Contact' # Site Contact
     fbb2efa0-366e-4b12-9981-03525862552e: 'Left Column - CTA Button - Text' # Left Column - CTA Button - Text
@@ -1530,56 +1526,6 @@ plugins:
       useQueueForAiFields: '0'
       useQueueForEmailNotifications: '0'
       useQueueForIntegrations: '0'
-  image-optimize:
-    edition: standard
-    enabled: true
-    licenseKey: 7KKXMBXM9ZFL4O5NT05RO3KN
-    schemaVersion: 1.0.0
-    settings:
-      allowUpScaledImageVariants: true
-      assetVolumeSubFolders: true
-      autoSharpenScaledImages: true
-      capSilhouetteSvgSize: true
-      createColorPalette: false
-      createPlaceholderSilhouettes: true
-      imageTransformTypeSettings:
-        __assoc__:
-          -
-            - nystudio107\imageoptimizeimgix\imagetransforms\ImgixImageTransform
-            -
-              __assoc__:
-                -
-                  - domain
-                  - ''
-                -
-                  - apiKey
-                  - ''
-                -
-                  - securityToken
-                  - ''
-                -
-                  - unsharpMask
-                  - '20'
-          -
-            - nystudio107\imageoptimizesharp\imagetransforms\SharpImageTransform
-            -
-              __assoc__:
-                -
-                  - baseUrl
-                  - ''
-          -
-            - nystudio107\imageoptimizethumbor\imagetransforms\ThumborImageTransform
-            -
-              __assoc__:
-                -
-                  - baseUrl
-                  - ''
-                -
-                  - securityKey
-                  - ''
-      lowerQualityRetinaImageVariants: true
-      sharpenScaledImagePercentage: 70
-      transformClass: nystudio107\imageoptimize\imagetransforms\CraftImageTransform
   redactor:
     edition: standard
     enabled: true

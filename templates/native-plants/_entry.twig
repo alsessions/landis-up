@@ -3,9 +3,9 @@
 <body class="ltr">
     {% include '_partials/_header.twig' %}
     {% if entry.featuredImage | length %}
-    {% set optimizedImages = entry.featuredImage.one().optimizedHero %}
+    {% set image = entry.featuredImage.one() %}
     <div
-        style="background-image:url('{{ optimizedImages.src() }}');background-position: center center;background-size: cover; background-repeat: no-repeat; width:100%;height:100%; ">
+        style="background-image:url('{{ image.getUrl({ width: 1600, height: 900, mode: 'crop', quality: 82, format: 'webp', upscale: false }) }}');background-position: center center;background-size: cover; background-repeat: no-repeat; width:100%;height:100%; ">
         {% else %}
         <div
             style="background-image:url('/assets/images/IMG_0432.JPG'); background-position: center center; background-size: cover; background-repeat: no-repeat; width:100%;height:100%; ">

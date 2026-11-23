@@ -4,9 +4,9 @@
 	{% include '_partials/_header.twig' %}
          {% if entry.featuredImage | length %}
 
-	    {% set optimizedImages = entry.featuredImage.one().optimizedImages %}   
+	    {% set image = entry.featuredImage.one() %}
         <div style="
-        background-image:url('{{ optimizedImages.src() }}');
+        background-image:url('{{ image.getUrl({ width: 768, height: 576, mode: 'crop', quality: 82, format: 'webp', upscale: false }) }}');
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;

@@ -35,6 +35,9 @@ return [
     // Whether crawlers should be allowed to index pages and following links
     'disallowRobots' => !$isProd,
 
+    // Avoid creating transforms larger than their source images.
+    'upscaleImages' => false,
+
     'aliases' => [
         '@web' => App::env('PRIMARY_SITE_URL'),
     ],

@@ -82,8 +82,8 @@
 			{% for block in entry.frontPageHero.all() %}
 				{% switch block.type %}
 					{% case "slideImage" %}
-						{% set image = block.slideImage.one().optimizedHero %}
-						<div class="swiper-slide flex flex-row" style="background-image:linear-gradient(to left, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), url('{{ image.src() }}'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
+						{% set image = block.slideImage.one() %}
+						<div class="swiper-slide flex flex-row" style="background-image:linear-gradient(to left, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.7)), url('{{ image.getUrl({ width: 1600, height: 900, mode: 'crop', quality: 82, format: 'webp', upscale: false }) }}'); background-size: cover; background-repeat: no-repeat; background-position: center center;">
 							<div class="swiper-text absolute top-0 px-4 md:px-10 py-10 max-w-3xl" style="text-shadow: 0 1px 3px rgba(0,0,0,0.5);">
 								<h2 class="text-2xl md:text-4xl font-bold text-white mb-4">
 									{{ block.slideTitle }}

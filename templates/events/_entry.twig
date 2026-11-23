@@ -72,11 +72,8 @@
 
         <div class="pt-12">
             {% if entry.featuredImage | length %}
-                {% set optimizedImages = entry.featuredImage.one().optimizedImages %}
-                <picture>
-                    <source srcset="{{ optimizedImages.srcsetWebP() }}" sizes="100vw" type="image/webp"/>
-                    <img src="{{ optimizedImages.src() }}" srcset="{{ optimizedImages.srcset() }}" sizes="100vw" class="rounded-lg"/>
-                </picture>
+                {% set image = entry.featuredImage.one() %}
+                <img src="{{ image.getUrl({ width: 768, height: 576, mode: 'crop', quality: 82, format: 'webp', upscale: false }) }}" alt="{{ image.alt ?? entry.title }}" class="rounded-lg">
             {% else %}
                 <img src="/assets/images/_640x640_crop_center-center_82_line/calendar.jpg.webp">
             {% endif %}
