@@ -28,9 +28,15 @@
 				{% for entry in pageEntries %}
 				<div class="grid md:grid-cols-12 gap-2">
 					<div class="md:col-span-4">
-						{% for myAsset in entry.featuredImage.all() %}
-						<a href="{{ entry.url }}"><img src="{{ myAsset.url('square500') }}"
-								class=" mx-auto bg-gray-800 rounded-md  hover:opacity-50"></a>{% endfor %}
+						{% set featuredImage = entry.featuredImage.one() %}
+						{% set embeddedImage = entry.textMarkdown | string | split('src="') %}
+						{% set imageUrl = featuredImage
+							? featuredImage.getUrl({ width: 500, height: 500, mode: 'crop', quality: 82, format: 'webp', upscale: false })
+							: (embeddedImage | length > 1 ? embeddedImage[1] | split('"') | first : null) %}
+						{% if imageUrl %}
+							<a href="{{ entry.url }}"><img src="{{ imageUrl }}" alt="{{ featuredImage.alt ?? entry.title }}"
+								class="w-full aspect-square object-cover mx-auto bg-gray-800 rounded-md hover:opacity-50" loading="lazy"></a>
+						{% endif %}
 					</div>
 					<div class="md:col-span-8 pb-2 px-2">
 						<p class="mb-0 text-base   text-gray-500 uppercase">

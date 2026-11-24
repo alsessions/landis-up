@@ -39,9 +39,12 @@
 			{{ entry.textMarkdown }}
 		</article>
 
-<!-- Begin Page Photo Gallery Section conditional -->
-{% include '_partials/_share.twig' %}
+		<div class="clear-both mt-10 mb-10">
+			{% include '_partials/_share.twig' %}
+		</div>
 	</section>
+
+	<!-- Begin Page Photo Gallery Section conditional -->
 	{% if entry.pageImages | length %}
 <section  class="clear-both max-w-6xl pt-10 pb-20 mx-auto">
 
