@@ -46,7 +46,6 @@ dbdump*
 /npm-debug.log
 
 # DEVELOPMENT
-/AGENTS.md
 /OLDcomposer.json
 /composer.json.save
 /tailwind.config.js.bak
