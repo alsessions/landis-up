@@ -1,5 +1,5 @@
 fill: null
-format: null
+format: webp
 handle: article400Wide
 height: null
 interlace: none
@@ -7,5 +7,5 @@ mode: crop
 name: 'Article 400 Wide'
 position: center-center
 quality: 82
-upscale: true
+upscale: false
 width: 400

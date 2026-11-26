@@ -9,7 +9,7 @@
         {% set image = entry.featuredImage.one() %}
         <div style="background-image:url('{{ image.getUrl({ width: 1600, height: 900, mode: 'crop', quality: 82, format: 'webp', upscale: false }) }}');background-position: center center;background-size: cover; background-repeat: no-repeat; width:100%;height:100%; ">
     {% else %}
-        <div style="background-image:url('/assets/images/IMG_0432.JPG'); background-position: center center; background-size: cover; background-repeat: no-repeat; width:100%;height:100%; ">
+        <div style="background-image:url('{{ craft.assets.id(9).one().getUrl({ width: 1600, height: 900, mode: 'crop', quality: 82, format: 'webp', upscale: false }) }}'); background-position: center center; background-size: cover; background-repeat: no-repeat; width:100%;height:100%; ">
     {% endif %}
         <div class="px-4 py-24 bg-black bg-opacity-50 md:py-48" style="background:rgba(0,0,0,0.3);">
             <h1 class="mx-auto text-3xl font-semibold text-center text-white md:text-4xl lg:text-5xl md:max-w-5xl">
@@ -40,7 +40,7 @@
                     </p>
                     <div id="lightgallery" class="grid clear-both max-w-6xl grid-cols-2 gap-4 py-5 mx-auto md:grid-cols-3">
                         {% for myAsset in entry.pageImages %}
-                            <a href="{{ myAsset.url }}" class="block overflow-hidden rounded-lg shadow-lg" data-lg-size="{{ myAsset.width }}-{{ myAsset.height }}" data-src="{{ myAsset.url }}">
+                            <a href="{{ myAsset.getUrl({ width: 1600, quality: 82, format: 'webp', upscale: false }) }}" class="block overflow-hidden rounded-lg shadow-lg" data-download-url="{{ myAsset.url }}">
                                 <img src="{{ myAsset.getUrl({ width: 640, quality: 82, format: 'webp', upscale: false }) }}" alt="{{ myAsset.alt ?? myAsset.title }}" class="object-cover w-full h-full transition-transform duration-300 transform hover:scale-105" loading="lazy" />
                             </a>
                         {% endfor %}

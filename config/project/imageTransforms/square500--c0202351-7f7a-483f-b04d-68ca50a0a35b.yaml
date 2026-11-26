@@ -1,5 +1,5 @@
 fill: null
-format: null
+format: webp
 handle: square500
 height: 500
 interlace: none
@@ -7,5 +7,5 @@ mode: crop
 name: 'Square 500'
 position: center-center
 quality: 82
-upscale: true
+upscale: false
 width: 500

@@ -5,7 +5,7 @@
          {% if entry.featuredImage | length %}
 	{% for myAsset in entry.featuredImage.all() %}
     <div style="
-        background-image:url('{{ myAsset.url }}');
+        background-image:url('{{ myAsset.getUrl({ width: 1600, height: 900, mode: 'crop', quality: 82, format: 'webp', upscale: false }) }}');
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;

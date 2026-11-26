@@ -8,7 +8,7 @@
         style="background-image:url('{{ image.getUrl({ width: 1600, height: 900, mode: 'crop', quality: 82, format: 'webp', upscale: false }) }}');background-position: center center;background-size: cover; background-repeat: no-repeat; width:100%;height:100%; ">
         {% else %}
         <div
-            style="background-image:url('/assets/images/IMG_0432.JPG'); background-position: center center; background-size: cover; background-repeat: no-repeat; width:100%;height:100%; ">
+            style="background-image:url('{{ craft.assets.id(9).one().getUrl({ width: 1600, height: 900, mode: 'crop', quality: 82, format: 'webp', upscale: false }) }}'); background-position: center center; background-size: cover; background-repeat: no-repeat; width:100%;height:100%; ">
             {% endif %}
             <div class="px-4 py-24 bg-black bg-opacity-50 md:py-48"
                 style="background:rgba(0,0,0,0.4);">

@@ -37,7 +37,7 @@
 
 
 				{% for myAsset in entry.pageImages.all() %}
-					<a href="{{ myAsset.url }}"><img src="{{ myAsset.url('square500') }}"   class="rounded shadow-2xl mx-auto"></a>
+					<a href="{{ myAsset.getUrl({ width: 1600, quality: 82, format: 'webp', upscale: false }) }}" data-download-url="{{ myAsset.url }}"><img src="{{ myAsset.url('square500') }}"   class="rounded shadow-2xl mx-auto"></a>
 				{% endfor %}
 			</div>
 

@@ -4,9 +4,15 @@
 
 html {
     font-family: 'Inter','sans-serif';
+    font-size: 106.25%;
     scroll-behavior: smooth;
 }
 
+@screen xl {
+    html {
+        font-size: 112.5%;
+    }
+}
 
 
 h1 {

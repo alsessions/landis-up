@@ -9,7 +9,7 @@ settings:
   characterLimit: null
   css: null
   cssFile: null
-  defaultTransform: null
+  defaultTransform: 9afd4d0c-09d0-4382-82c4-df2b2ff26cd0 # Article 640
   defaultUploadLocationSubpath: null
   defaultUploadLocationVolume: null
   fullGraphqlData: false

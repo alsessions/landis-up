@@ -1,5 +1,5 @@
 fill: null
-format: null
+format: webp
 handle: slider
 height: 800
 interlace: none
@@ -7,5 +7,5 @@ mode: crop
 name: Slider
 position: center-center
 quality: 82
-upscale: true
+upscale: false
 width: 2000

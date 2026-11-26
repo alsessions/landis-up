@@ -212,7 +212,7 @@
 		</div>
 	</section>
 
-	<section class="w-full px-4 py-10 sm:py-20 md:py-32 bg-fixed" style="background-image: url('/assets/images/landis-big-view.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center center">
+	<section class="w-full px-4 py-10 sm:py-20 md:py-32 bg-fixed" style="background-image: url('{{ craft.assets.id(20976).one().getUrl({ width: 1600, height: 900, mode: 'crop', quality: 82, format: 'webp', upscale: false }) }}'); background-size: cover; background-repeat: no-repeat; background-position: center center">
 		<div class="px-8 py-5 md:px-10 md:py-6 not-prose md:w-2/3 lg:w-3/5 mx-auto bg-black rounded-lg bg-opacity-40 backdrop-filter backdrop-blur-sm shadow-xl border border-white border-opacity-10 transition-all duration-300 hover:shadow-2xl">
 			<h2 class="mx-auto mt-0 mb-2 text-xl font-bold text-center text-white md:text-3xl tracking-wide">
 				Weddings &amp; Rentals
@@ -251,10 +251,10 @@
 						the <strong>free</strong> app and search for "Landis Arboretum".</p>
 					<div class="flex flex-wrap">
 						<a href="https://apps.apple.com/us/app/uniguide-audio-tours-and-maps/id862232588?mt=8"><img
-							src="/assets/images/app-store.jpg"
+							src="{{ craft.assets.id(3489).one().getUrl({ width: 320, quality: 82, format: 'webp', upscale: false }) }}"
 							class="inline-block max-w-full px-2 w-36 filter hover:brightness-50"></a>
 						<a href="https://play.google.com/store/apps/details?id=com.vitart.audiotour"><img
-							src="/assets/images/play-store.jpg"
+							src="{{ craft.assets.id(3490).one().getUrl({ width: 320, quality: 82, format: 'webp', upscale: false }) }}"
 							class="inline-block max-w-full px-2 w-36 filter hover:brightness-50"></a>
 					</div>-->
 				</div>

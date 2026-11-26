@@ -1,6 +1,6 @@
 # Project Overview
 
-This project currently runs Craft CMS 4 and is intended to upgrade to Craft CMS 5.
+This project runs Craft CMS 5.
 
 ## Environments
 
@@ -13,7 +13,7 @@ This project currently runs Craft CMS 4 and is intended to upgrade to Craft CMS 
 
 ## Stack
 
-- Craft CMS 4 (current), with Craft CMS 5 as the upgrade target
+- Craft CMS 5
 - Twig
 - Tailwind CSS
 - Vanilla JavaScript
@@ -21,7 +21,7 @@ This project currently runs Craft CMS 4 and is intended to upgrade to Craft CMS 
 - DDEV for local development
 - A new Apache/PHP LAMP stack for the future deployment
 - GitHub for source control
-- Craft CMS plugins include, Freeform, Image Optimize and SEOMatic
+- Craft CMS plugins include Freeform and SEOMatic.
 
 ## Development Preferences
 
@@ -34,10 +34,8 @@ This project currently runs Craft CMS 4 and is intended to upgrade to Craft CMS 
 
 ## Craft CMS
 
-- Keep existing code compatible with the current Craft 4 installation.
-- Prepare new code and project changes for Craft 5 where practical; avoid introducing Craft 4-only APIs or patterns.
-- Before changing Craft APIs, plugins, PHP requirements, or project config, check their Craft 5 compatibility and upgrade implications.
-- Treat the Craft 5 upgrade as a separate planned change; do not assume the site has already been upgraded.
+- Use Craft 5-compatible APIs and patterns.
+- Before changing Craft APIs, plugins, PHP requirements, or project config, check compatibility with the installed Craft 5 version.
 - Prefer Craft element queries over custom PHP.
 - Respect existing section, field, and asset handles.
 - Do not rename Craft fields or handles unless explicitly requested.
@@ -45,14 +43,13 @@ This project currently runs Craft CMS 4 and is intended to upgrade to Craft CMS 
 
 ## Images
 
-- Prefer native Craft transforms requested in Twig over asset-wide ImageOptimize fields.
+- The project has replaced Image Optimize with native Craft image transforms. Request transforms in Twig where the images are rendered.
 - Generate only the dimensions a template actually uses. The established transforms are 1600×900 for heroes, 768×576 for general images, and 576×768 for portrait collection/map images.
 - Use `mode: 'crop'`, `quality: 82`, `format: 'webp'`, and `upscale: false`; Craft will honor the asset focal point and cache the transform on demand.
-- Use WebP directly unless a fallback is specifically required. A fallback or each additional `srcset` width creates another transform.
+- Keep full-resolution uploads. Use native WebP transforms at quality 82 with upscaling disabled for display. The CKEditor default for inserted images is `article640`. Keep original URLs available for intentional downloads.
 - Add `srcset` only when the layout materially benefits from it, and provide an accurate `sizes` value.
 - Render meaningful alt text, using the asset alt text with the entry title as a fallback.
 - Keep source assets untouched. Treat generated transform directories as reproducible cache files.
-- Do not add an image optimization field to an entire asset volume without a demonstrated template requirement.
 
 ```twig
 {% set image = entry.featuredImage.one() %}

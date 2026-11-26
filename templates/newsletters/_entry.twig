@@ -62,7 +62,7 @@
 {% if image|length %}
     <img src="{{ image.getUrl({ width: 640, quality: 82, format: 'webp', upscale: false }) }}" alt="{{ image.alt ?? 'Newsletter cover' }}">
 {% else %}
-<img src="/assets/newsletters/vector-pdf.png">
+<img src="{{ craft.assets.id(9576).one().getUrl('article640') }}">
 {% endif %}
 
 </a>

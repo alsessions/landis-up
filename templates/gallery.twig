@@ -46,7 +46,7 @@
 		<div class="max-w-6xl  lg:max-w-7xl mx-auto grid grid-cols-2 sm:grid-cols-3 gap-4 md:gap-6 xl:gap-8" id="lightgallery">
 
 				{% for myAsset in entry.pageImages.all() %}
-                  <a  href="{{ myAsset.url }}" class=" bg-gray-100 overflow-hidden rounded-lg shadow-lg " data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                  <a  href="{{ myAsset.getUrl({ width: 1600, quality: 82, format: 'webp', upscale: false }) }}" data-download-url="{{ myAsset.url }}" class=" bg-gray-100 overflow-hidden rounded-lg shadow-lg " data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
 					<img src="{{ myAsset.url('square500') }}" class="w-full h-full object-cover object-center  inset-0 transform group-hover:scale-110 transition duration-200">
                           
                             </a>
